@@ -2,20 +2,21 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const network = NETWORK.eth;
+const network = NETWORK.bsc;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Yu coin https://pin-pin.io";
+const description = "Mint Platform https://pin-pin.io";
+const baseUri = "ipfs://QmTApT2CRs5359USSJ3y8p7bXyqwVsP5gs3sTKAqb48jzw";
+
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "YUC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0xEd0B5cD3AFc032b187a393258769634673437063",
       share: 100,
     },
   ],
@@ -24,33 +25,42 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 100000,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
+      { name: "L4" },
+      { name: "L5" },
       { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
+      { name: "Iriss" },
     ],
   },
 ];
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 250,
+  height: 300,
   smoothing: false,
 };
 
 const gif = {
   export: false,
-  repeat: 0,
-  quality: 100,
+  repeat: 1,
+  quality: 200,
   delay: 500,
 };
 
@@ -72,7 +82,7 @@ const pixelFormat = {
 };
 
 const background = {
-  generate: true,
+  generate: false,
   brightness: "80%",
   static: false,
   default: "#000000",
