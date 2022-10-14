@@ -5,13 +5,13 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.bsc;
 
 // General metadata for Ethereum
-const namePrefix = "Yu coin https://pin-pin.io";
+const namePrefix = "Pincoin https://pin-pin.io";
 const description = "Mint Platform https://pin-pin.io";
-const baseUri = "ipfs://QmTApT2CRs5359USSJ3y8p7bXyqwVsP5gs3sTKAqb48jzw";
+const baseUri = "ipfs://bafybeiae7pryk7at3rvqmq67rpqzy7gble2xhoiuqdy53q3codjct632qu";
 
 
 const solanaMetadata = {
-  symbol: "YUC",
+  symbol: "YPC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "",
   creators: [
@@ -25,10 +25,10 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100000,
+    growEditionSizeTo: 210000,
     layersOrder: [
       { name: "L4" },
-      { name: "L5" },
+      { name: "L3.3" },
       { name: "Iris" },
       { name: "Iriss" },
       { name: "Iriss" },
